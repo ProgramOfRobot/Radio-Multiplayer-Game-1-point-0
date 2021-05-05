@@ -11,6 +11,7 @@ function Init() {
 
     Me = game.createSprite(4, 4)
     Enemy = game.createSprite(0, 0)
+    Enemy.set(LedSpriteProperty.Brightness, 100)
 }
 
 function RunLoopOfGame() {
@@ -70,7 +71,12 @@ radio.onReceivedValue(function (name: string, value: number) {
         }
     }
     else {
-        onStart = true
+        game.pause()
+
+        basic.showString(name)
+        basic.pause(4000)
+
+        game.resume()
     }
 })
 
