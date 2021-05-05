@@ -11,7 +11,7 @@ function Init() {
 
     Me = game.createSprite(4, 4)
     Enemy = game.createSprite(0, 0)
-    Enemy.set(LedSpriteProperty.Brightness, 100)
+    Enemy.set(LedSpriteProperty.Brightness, 500)
 }
 
 function RunLoopOfGame() {
