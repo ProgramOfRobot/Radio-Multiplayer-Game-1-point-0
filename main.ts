@@ -74,7 +74,6 @@ radio.onReceivedValue(function (name: string, value: number) {
         game.pause()
 
         basic.showString(name)
-        basic.pause(4000)
         basic.clearScreen()
 
         game.resume()
